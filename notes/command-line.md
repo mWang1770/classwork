@@ -62,7 +62,107 @@ Corey Schafer has a few very important videos related to the Command line. Check
 ## Linux/Mac Terminal Tutorial: Create, Copy, Move, Rename and Delete Files and Directories
 [Watch the Video](https://www.youtube.com/watch?v=eoejHvAPDFs)
 
+## Creating Directories:
+  - mkdir name
+## Creating Files
+  - touch name_of_file.txt
+## Opening Files
+  - open name_of_file.txt
+## Copying Files
+  - cp name_of_file.txt copy_of_name_of_file.txt
+## Renaming Files
+  - in order to rename, you must move to same directory
+  - mv name_of_file new_name_of_file
+## Moving Files
+  - first need to create somewhere new for the file to go
+  - so, create a subdirectory to move the file
+    - e.g. mkdir name_of_subdir
+  - once you've created the subdirectory:
+    - mv name_of_file.txt name_of_subdir/
+    -                                   ^ the slash is important to distinguish this from renaming
+## Moving and Renaming in same command line
+  - mv name_of_file.txt name_of_subdir/new_name_of_file.txt
+  - you have to first move and then rename
+
+## Deleting Files
+  - rm name_of_file.txt
+  - be careful with this command since if it's removed, it is essentially impossible to recover
+
+## Copying Directories
+  - first need to make new directory for it to go to
+    - mkdir copy_of_name_of_directory
+  - once you create a new location for it to move, copy that to the new location
+    - mv-R name_of_directory/copy_of_name_of_directory
+    -    ^ the -R is important because mv does not apply for directories, only files
+
+## Renaming Directories
+  - It is the same as renaming files
+  - mv name_of_directory/new_name_of_directory
+  
+## Moving Directories
+  - Same as moving files
+  - mv name_of_directory/ new_name_of_directory/
+
+## Moving and Renaming in same command line
+  - mv name_of_directory/../new_name_of_directory
+  
+## Deleting Directories
+  - rm-R name_of_directory
+  - Special Cases:
+    - Some directories do not delete properly using this command, so you can force deletion:
+      - rm-rf new_name_of_directory
 
 ## Mac OS X Terminal Tutorial: Time-Saving Keyboard Shortcuts
 [Watch the Video](https://www.youtube.com/watch?v=TXzrk3b9sKM)
 
+- can use arrow keys to move around the code
+
+## Ctrl + a
+  - moves to beginning of the line
+
+## Ctrl + e
+  - moves to the end of the line
+  
+## Ctrl + u
+  - deletes everything before the cursor
+  
+## Ctrl + k
+  - deletes everything after cursor
+  
+## Tab
+  - autocompletes
+
+## Up Arrow
+  - scrolls through past commands
+
+## Down Arrow
+  - goes down through the command  list until it reaches a new blank command line
+
+## ! Command
+  - goes through all past commands and reruns the first command with the letters you typed
+    - e.g. ! fi
+    - re-runs all past commands until it encounters and reruns the first command beginning with "fi"
+    
+## history
+  - shows you all your past commands with a number assigned to each
+  - can also use ! assigned number to find the related code
+  
+## Ctrl + r
+  - reverse search
+  - 'search': past command that the terminal is going to run
+  
+## Ctrl + l
+  - clears screen, but doesn't clear the scroll back
+  - if you scroll up, you can still find your past commands
+  
+## Option <- ->
+  - moves one ward at a time
+  
+## Option + Click
+  - the pointer turns into a bullseye kind of thing(?)
+  - anywhere you click, it goes to 
+  
+## Cmnd + k
+  - clears screen and scroll at the same time
+  
+    
