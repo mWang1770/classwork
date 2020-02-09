@@ -22,6 +22,19 @@ The videos are on average 20 minutes long. Commit to watching one video after sc
 
 
 ## 1: Install and Setup for Mac and Windows
+    - start and search for cmd (command prompt)
+    - type python--version
+        - will probably shiw that it can not find file, 
+        - if so, go on the website and download most recent version 
+        - check the PATH box to avoid work
+        - after it finishes downloading, you can double check by doing the cmd thing again
+    - # message 
+        - same as commenting
+        - does not affect code 
+    - print('message') or print("message")
+        - prints out message
+    - editors that can be used: 
+        -Atom.io, SuboimeText.com, Pycharm(IDE)
 
 ## 2: Strings - Working with Textual Data
 1. What is a variable?
